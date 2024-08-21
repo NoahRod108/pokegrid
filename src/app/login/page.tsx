@@ -6,8 +6,15 @@ const page = () => {
   return (
     <>
       <section>
-        <div className="flex justify-center items-center min-h-svh">
-          <div className="login-bg rounded-lg overflow-hidden shadow-lg">
+        <div className="app">
+          <div className="login-bg-container">
+            <div className="login-bg-pattern"></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center min-h-full absolute top-0 left-0 z-10 min-w-full">
+          <div className="pokedex-bg rounded-lg overflow-hidden shadow-lg">
             <div className="flex flex-col justify-between items-center min-h-full">
               <Image src={navbar} alt="navbar" />
               <div className="login-content text-center font-poetsen">

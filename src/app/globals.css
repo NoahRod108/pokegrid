@@ -13,13 +13,63 @@ body {
   scroll-behavior: smooth;
 }
 
+/*  */
+
 :root {
   --yellow: #ffdc27;
   --white: #d9d9d9;
 }
 
+/* .login-radiant-transparent {
+  background: rgb(119, 252, 255);
+  background: radial-gradient(
+    circle,
+    rgba(119, 252, 255, 0) 0%,
+    rgba(71, 151, 153, 1) 100%
+  );
+}
+.login-radiant {
+  background: radial-gradient(#77fcff, #479799);
+}
+
 .login-bg {
   background-image: url("../assets/images/login-bg.svg");
+  background-size: 50%;
+  position: absolute;
+  translate: -50% 0%;
+  animation: pan 180s linear infinite;
+} */
+
+.app {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-bg-container {
+  background: radial-gradient(#77fcff, #479799);
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-bg-pattern {
+  background-image: url("../assets/images/login-bg.svg");
+  background-size: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0%;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  min-width: 1200px;
+  animation: pan 60s linear infinite;
+  will-change: background-position;
+}
+
+.pokedex-bg {
+  background-image: url("../assets/images/pokedex-bg.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,4 +87,14 @@ body {
   color: var(--white);
   -webkit-text-stroke: 8px black;
   paint-order: stroke fill;
+}
+
+@keyframes pan {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  100% {
+    background-position: 100% 0%;
+  }
 }
