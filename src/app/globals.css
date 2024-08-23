@@ -40,7 +40,7 @@ body {
   animation: pan 180s linear infinite;
 } */
 
-.app {
+/* .app {
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -55,7 +55,7 @@ body {
 
 .login-bg-pattern {
   background-image: url("../assets/images/login-bg.svg");
-  background-size: 50%;
+  background-size: 30%;
   position: absolute;
   left: 50%;
   top: 0px;
@@ -64,9 +64,8 @@ body {
   height: 100%;
   width: 100%;
   min-width: 1200px;
-  animation: pan 60s linear infinite;
-  will-change: background-position;
-}
+  animation: pan 6s linear infinite;
+} */
 
 .pokedex-bg {
   background-image: url("../assets/images/pokedex-bg.svg");
@@ -91,10 +90,10 @@ body {
 
 @keyframes pan {
   0% {
-    background-position: 0% 0%;
+    transform: translate(0);
   }
 
   100% {
-    background-position: 100% 0%;
+    transform: translate(-130px);
   }
 }

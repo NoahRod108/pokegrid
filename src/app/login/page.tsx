@@ -13,7 +13,7 @@ const page = () => {
           </div>
         </div>
 
-        <div className="flex justify-center items-center min-h-full absolute top-0 left-0 z-10 min-w-full">
+        <div className="flex justify-center items-center min-h-full absolute top-0 left-0 z-10 min-w-full bg-[#1E1E1E]">
           <div className="pokedex-bg rounded-lg overflow-hidden shadow-lg">
             <div className="flex flex-col justify-between items-center min-h-full">
               <Image src={navbar} alt="navbar" />
